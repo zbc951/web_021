@@ -1,6 +1,6 @@
 $BG_color_1: #c4a167;
 $BG_color_2: #ffffff;
-$BG_color_3: #f4f4f4;
+$BG_color_3: #7d0022;
 
 $Font_color_4: $BG_color_1;
 $Font_Title_1: #996c33;
@@ -212,6 +212,9 @@ header .downList .fa-solid.fa-chevron-right { //個別調整 //常駐
 }
 
 //home
+.home {
+    background: $BG_color_3;
+}
 .home .typeList .gameBlock p {
     color: $Font_Title_1;
     font-size: 26px;
@@ -458,7 +461,7 @@ main .helpWrap .helpBody .container>div p.haveBtn {
 
 //innerPage
 main.innerPage { //個別調整
-    background: #f4f4f4;
+    background: $BG_color_3;
 }
 
 //3欄背景

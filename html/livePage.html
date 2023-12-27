@@ -205,42 +205,27 @@
                 </div>
             </div>
         </div>
-        
+        <!-- 跑馬燈 -->
+        <div class="marqueeGroup">
+            <div class="trapezoid"></div>
+            <div class="decorationL"></div>
+            <i></i>
+            <div class="marquee">
+                <p>我是跑馬燈我是跑馬燈我是跑馬燈我是跑馬燈</p>
+            </div>
+            <div class="decorationR"></div>
+        </div>
     </main>
-    <!-- 懸浮按鈕 -->
-    <aside class="app">
-        <i class="fa-solid fa-download"></i>
-        <p>手機下載</p>
-    </aside>
-    <aside class="cs">
-        <i class="csBtn_ic"></i>
-    </aside>
-        <aside class="innerPage colorPicker">
-        <div class="hint">
-            <i class="fa-solid fa-gear"></i>
-            <p>主題色</p>
-        </div>
-        <div class="color">
-            <div class="colorBlock gold active"></div>
-            <div class="colorBlock darkBlue"></div>
-            <div class="colorBlock red"></div>
-            <div class="colorBlock green"></div>
-            <div class="colorBlock blue"></div>
-            <div class="colorBlock purple"></div>
-            <div class="colorBlock orange"></div>
-        </div>
-    </aside>
     <!-- footer -->
     <footer>
         <div class="footerGroup">
             <div class="navGroup">
                 <ul>
                     <li class="active"><p>最新公告</p></li>
-                    <li><p>優惠</p></li>
-                    <li><p>VIP會員</p></li>
-                    <li><p>幫助中心</p></li>
-                    <li><p>關於我們</p></li>
-                    <li><p>加入我們</p></li>   
+                    <li onclick="window.location.href='../html/event.html'"><p>優惠</p></li>
+                    <li onclick="window.location.href='../html/vip.html'"><p>VIP會員</p></li>
+                    <li onclick="window.location.href='../html/help.html'"><p>幫助中心</p></li>
+                    <li onclick="window.location.href='../html/help.html'"><p>關於我們</p></li> 
                 </ul>
                 <span>2021 AU8GAMING.COM</span>
             </div>
@@ -369,6 +354,23 @@
             </div>
         </div>
     </div>
-    <div class="bg gamePage_BG"></div>
+    <aside>
+        <div class="download">
+            <div class="icon">
+                <i></i>
+            </div>
+            <div class="txt">
+                <p>手機下載</p>
+            </div>
+        </div>
+        <ul class="service">
+            <li><i class="phone"></i></li>
+            <li><i class="line"></i></li>
+            <li><i class="weChat"></i></li>
+        </ul>
+        <div class="backTop display">
+            <div class="icon"></div>
+        </div>
+    </aside>
 </body>
 </html>
