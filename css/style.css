@@ -797,7 +797,7 @@ html body header .downList .listWrap .center ol li p {
 html body .home {
   width: 100%;
   height: auto;
-  padding: 125px 0 110px;
+  padding: 125px 0 20px;
 }
 html body .home .swiperGroup {
   width: 100%;
@@ -1406,6 +1406,1351 @@ html body footer .footerTxt p {
   color: #7d0022;
   padding-bottom: 30px;
 }
+html body aside {
+  position: fixed;
+  top: 185px;
+  z-index: 40;
+  cursor: pointer;
+}
+html body aside.app {
+  width: 55px;
+  height: 189px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 10px;
+}
+html body aside.app i {
+  margin-bottom: 15px;
+}
+html body aside.app p {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+}
+html body aside.cs {
+  width: 60px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  right: 10px;
+}
+html body aside.colorPicker {
+  width: auto;
+  height: auto;
+  background: rgba(216, 216, 216, 0.8235294118);
+  -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+  top: unset;
+  bottom: 50px;
+  right: 8px;
+  cursor: unset;
+}
+html body aside.colorPicker.display .hint {
+  width: 125px;
+}
+html body aside.colorPicker.display .hint p {
+  display: block;
+}
+html body aside.colorPicker.display .color {
+  display: -ms-grid;
+  display: grid;
+}
+html body aside.colorPicker .hint {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px;
+}
+html body aside.colorPicker .hint i {
+  font-size: 20px;
+  cursor: pointer;
+}
+html body aside.colorPicker .hint p {
+  display: none;
+  color: #494949;
+  font-size: 15px;
+  font-weight: bold;
+}
+html body aside.colorPicker .color {
+  display: none;
+  width: 100%;
+  height: auto;
+  -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 0 15px 15px;
+}
+html body aside.colorPicker .color .colorBlock {
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  position: relative;
+  cursor: pointer;
+}
+html body aside.colorPicker .color .colorBlock.active {
+  border-color: #383838;
+}
+html body aside.colorPicker .color .colorBlock.active::before {
+  opacity: 1;
+}
+html body aside.colorPicker .color .colorBlock::before {
+  content: "";
+  width: 98%;
+  height: 98%;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+}
+html body aside.colorPicker .color .colorBlock.gold {
+  background: #c4a167;
+}
+html body aside.colorPicker .color .colorBlock.darkBlue {
+  background: #0c4058;
+}
+html body aside.colorPicker .color .colorBlock.red {
+  background: #820333;
+}
+html body aside.colorPicker .color .colorBlock.green {
+  background: #235945;
+}
+html body aside.colorPicker .color .colorBlock.blue {
+  background: #158CF5;
+}
+html body aside.colorPicker .color .colorBlock.purple {
+  background: #9647BF;
+}
+html body aside.colorPicker .color .colorBlock.orange {
+  background: #ffa500;
+}
+html body .swiper {
+  width: 100%;
+  min-width: 1400px;
+}
+html body .swiper .swiper-wrapper {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+}
+html body .swiper .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: auto;
+}
+html body .swiper .swiper-button-prev,
+html body .swiper .swiper-button-next {
+  width: 285px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  margin: 0;
+}
+html body .swiper .swiper-button-prev:hover i, html body .swiper .swiper-button-prev:active i, html body .swiper .swiper-button-prev.active i,
+html body .swiper .swiper-button-next:hover i,
+html body .swiper .swiper-button-next:active i,
+html body .swiper .swiper-button-next.active i {
+  opacity: 1;
+}
+html body .swiper .swiper-button-prev::before, html body .swiper .swiper-button-prev::after,
+html body .swiper .swiper-button-next::before,
+html body .swiper .swiper-button-next::after {
+  content: "";
+}
+html body .swiper .swiper-button-prev i,
+html body .swiper .swiper-button-next i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0.5;
+}
+html body .swiper .swiper-button-prev {
+  left: 0;
+}
+html body .swiper .swiper-button-next {
+  right: 0;
+}
+html body .eventWrap {
+  width: 100%;
+  height: auto;
+}
+html body .eventWrap .eventTitle {
+  width: 100%;
+  height: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .eventWrap .eventBody {
+  width: 1400px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px auto 0;
+  padding: 0 0 50px;
+}
+html body .eventWrap .eventBody .sideNav {
+  width: 360px;
+  height: auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 15px;
+}
+html body .eventWrap .eventBody .sideNav ul {
+  width: 100%;
+  height: 100%;
+}
+html body .eventWrap .eventBody .sideNav ul li {
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 25px;
+  position: relative;
+  cursor: pointer;
+}
+html body .eventWrap .eventBody .sideNav ul li:before {
+  content: "";
+  width: 4px;
+  height: 100%;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+html body .eventWrap .eventBody .sideNav ul li i {
+  margin-right: 30px;
+}
+html body .eventWrap .eventBody .eventList {
+  width: 1025px;
+  height: auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .eventWrap .eventBody .eventList .eventBox {
+  width: 100%;
+  height: 310px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+html body .eventWrap .eventBody .eventList .eventBox:last-child {
+  margin-bottom: 0;
+}
+html body .eventWrap .eventBody .eventList .eventBox img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+html body .eventWrap .eventBody .eventList .eventBox ul {
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 25px;
+}
+html body .eventWrap .eventBody .eventList .eventBox ul li {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .eventWrap .eventBody .eventList .eventBox ul li.title {
+  max-width: 72%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html body .eventWrap .eventBody .eventList .eventBox ul li.btnBox {
+  width: 28%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .eventWrap .eventBody .eventList .eventBox ul li.btnBox button:last-child {
+  margin-left: 10px;
+}
+html body .gamePage_Wrap {
+  width: 100%;
+  height: auto;
+}
+html body .gamePage_Wrap .center {
+  width: 1400px;
+  height: auto;
+  margin: 0 auto;
+}
+html body .gamePage_Wrap .center .containerWrap {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 70px 0 20px;
+}
+html body .gamePage_Wrap .center .containerWrap .mainImg {
+  width: 675px;
+  height: 732px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: #000000;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox {
+  height: auto;
+  padding-top: 148px;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox .title p {
+  white-space: nowrap;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox .title p.small {
+  margin-left: 16px;
+  padding-bottom: 5px;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox .mainCnt {
+  width: 630px;
+  margin: 50px 0;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox .btnBox {
+  width: 630px;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 15px 1fr 15px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox .btnBox li {
+  width: auto;
+  height: auto;
+  cursor: pointer;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox .btnBox li img {
+  width: 189px;
+  height: 185px;
+  margin: 0 auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox .btnBox li img:hover, html body .gamePage_Wrap .center .containerWrap .textBox .btnBox li img:active, html body .gamePage_Wrap .center .containerWrap .textBox .btnBox li img.active {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox .btnBox li p {
+  padding-top: 10px;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap {
+  width: 100%;
+  height: auto;
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .nav {
+  width: 100%;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 50px;
+  position: relative;
+  cursor: pointer;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li::before {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background: transparent;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 9px 10px 9px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .nav .search {
+  width: 330px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px 0 10px;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .nav .search i {
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 5px;
+  cursor: pointer;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .nav .search input {
+  width: 100%;
+  height: 100%;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li {
+  width: 100%;
+  height: auto;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 15px 1fr 15px 1fr 15px 1fr 15px 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li {
+  width: 248px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li:hover .btnBox, html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li:active .btnBox, html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li.active .btnBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li img {
+  width: 100%;
+  height: 165px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background: #000000;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .textBox {
+  width: 100%;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 15px;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .textBox p {
+  max-width: 175px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .textBox i {
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox {
+  width: 100%;
+  height: 165px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox button {
+  width: 140px;
+  height: 40px;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox button:first-child {
+  margin-bottom: 15px;
+}
+html body .gamePage_Wrap .center .marqueeWrap {
+  width: 100%;
+  height: 50px;
+}
+html body .helpWrap {
+  width: 100%;
+  height: auto;
+}
+html body .helpWrap .helpBody {
+  width: 1400px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  padding: 30px 0 50px;
+}
+html body .helpWrap .helpBody .sideNav {
+  width: 360px;
+  height: auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 30px;
+}
+html body .helpWrap .helpBody .sideNav ul {
+  width: 100%;
+  height: auto;
+}
+html body .helpWrap .helpBody .sideNav ul li {
+  width: 100%;
+  height: auto;
+  position: relative;
+  cursor: pointer;
+}
+html body .helpWrap .helpBody .sideNav ul li.active .topic i:last-child {
+  -webkit-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
+}
+html body .helpWrap .helpBody .sideNav ul li.active ul.display {
+  display: block;
+}
+html body .helpWrap .helpBody .sideNav ul li .topic {
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 0 20px;
+  cursor: pointer;
+}
+html body .helpWrap .helpBody .sideNav ul li .topic i:first-child {
+  margin-right: 20px;
+}
+html body .helpWrap .helpBody .sideNav ul li .topic i:last-child {
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+html body .helpWrap .helpBody .sideNav ul li i {
+  margin-right: 30px;
+}
+html body .helpWrap .helpBody .sideNav ul li ul {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+html body .helpWrap .helpBody .sideNav ul li ul li {
+  width: 100%;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 55px;
+  cursor: pointer;
+}
+html body .helpWrap .helpBody .container {
+  width: 1010px;
+  height: auto;
+  padding: 40px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .helpWrap .helpBody .container > div {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+html body .helpWrap .helpBody .container > div.display {
+  display: block;
+}
+html body .helpWrap .helpBody .container > div h2 {
+  margin: 55px 0 35px;
+}
+html body .helpWrap .helpBody .container > div h2:nth-of-type(1) {
+  margin-top: 0;
+}
+html body .helpWrap .helpBody .container > div p {
+  margin-bottom: 23px;
+}
+html body .helpWrap .helpBody .container > div p.remind.mar {
+  margin-top: 75px;
+}
+html body .helpWrap .helpBody .container > div p.haveBtn {
+  margin-bottom: 23px;
+}
+html body .helpWrap .helpBody .container > div p.haveBtn button {
+  margin-left: 20px;
+}
+html body .helpWrap .helpBody .container > div .img {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+html body .helpWrap .helpBody .container > div button {
+  width: 215px;
+  height: 40px;
+}
+html body .filter {
+  display: none;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+html body .filter.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .filter .jumpWindow {
+  display: none;
+  min-width: 480px;
+  height: auto;
+  overflow: hidden;
+}
+html body .filter .jumpWindow.display {
+  display: block;
+}
+html body .filter .jumpWindow.fgPW .content {
+  height: 80px;
+}
+html body .filter .jumpWindow.fgPW .content input {
+  text-align: center;
+}
+html body .filter .jumpWindow.plsLogin .content {
+  height: 80px;
+}
+html body .filter .jumpWindow.news .content ul {
+  width: 840px;
+  height: 300px;
+  overflow-y: overlay;
+  padding: 15px;
+}
+html body .filter .jumpWindow.news .content ul ol {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+html body .filter .jumpWindow.news .content ul ol.display {
+  display: block;
+}
+html body .filter .jumpWindow.news .content ul li {
+  width: 100%;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .filter .jumpWindow.news .content ul li.typeList {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+html body .filter .jumpWindow.news .content ul li.typeList button {
+  width: auto;
+  height: 100%;
+  position: relative;
+  padding: 0 40px;
+}
+html body .filter .jumpWindow.news .content ul li.typeList button:hover::after, html body .filter .jumpWindow.news .content ul li.typeList button:active::after, html body .filter .jumpWindow.news .content ul li.typeList button.active::after {
+  display: block;
+}
+html body .filter .jumpWindow.news .content ul li.typeList button::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+}
+html body .filter .jumpWindow.news .content ul li.typeList button::after {
+  display: none;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+}
+html body .filter .jumpWindow.news .content ul li .text {
+  max-width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html body .filter .jumpWindow.quickTransfer {
+  width: 480px;
+  height: auto;
+}
+html body .filter .jumpWindow.quickTransfer .content {
+  padding: 40px 40px 15px 40px;
+}
+html body .filter .jumpWindow.quickTransfer .content form {
+  width: 100%;
+  height: auto;
+}
+html body .filter .jumpWindow.quickTransfer .content form label {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 30px 70%;
+  grid-template-columns: 25% 70%;
+  gap: 10px 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+html body .filter .jumpWindow.quickTransfer .content form label input {
+  padding: 0 15px;
+}
+html body .filter .jumpWindow.quickTransfer .content form label i {
+  width: 100%;
+  text-align: center;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+}
+html body .filter .jumpWindow.quickTransfer .content form label .transferBtn_Box {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 8px 1fr 8px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  padding: 5px 0;
+}
+html body .filter .jumpWindow.quickTransfer .content form label .transferBtn_Box button {
+  width: 100%;
+  height: 30px;
+}
+html body .filter .jumpWindow.quickTransfer .content form label .checkBtn {
+  width: 100%;
+  height: 40px;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+}
+html body .filter .jumpWindow.quickTransfer .btnBox {
+  padding: 20px 0;
+}
+html body .filter .jumpWindow.reminder .content, html body .filter .jumpWindow.applied .content {
+  padding: 24px 80px 35px;
+}
+html body .filter .jumpWindow.reminder .content p, html body .filter .jumpWindow.applied .content p {
+  text-align: center;
+}
+html body .filter .jumpWindow.changePhone .content {
+  padding: 20px 0;
+}
+html body .filter .jumpWindow.changePhone .content .text {
+  width: 280px;
+  margin-bottom: 20px;
+}
+html body .filter .jumpWindow.changePhone .content label {
+  width: 280px;
+  height: auto;
+  margin-bottom: 20px;
+  position: relative;
+}
+html body .filter .jumpWindow.changePhone .content label:last-child {
+  margin-bottom: 0;
+}
+html body .filter .jumpWindow.changePhone .content label input {
+  padding: 0 15px;
+}
+html body .filter .jumpWindow.changePhone .content label button {
+  padding: 5px;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+html body .filter .jumpWindow.changePW .content {
+  padding: 20px 0;
+}
+html body .filter .jumpWindow.changePW .content label {
+  width: 280px;
+  height: auto;
+  margin-bottom: 20px;
+  position: relative;
+}
+html body .filter .jumpWindow.changePW .content label:last-child {
+  margin-bottom: 0;
+}
+html body .filter .jumpWindow.changePW .content label input {
+  padding: 0 15px;
+}
+html body .filter .jumpWindow.dealDetail {
+  width: 840px;
+}
+html body .filter .jumpWindow.dealDetail .content {
+  padding: 20px;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+}
+html body .filter .jumpWindow.dealDetail .content .serialNum span {
+  margin-left: 10px;
+}
+html body .filter .jumpWindow.dealDetail .content table tr th,
+html body .filter .jumpWindow.dealDetail .content table tr td {
+  width: auto;
+}
+html body .filter .jumpWindow.pointDetail {
+  width: 480px;
+}
+html body .filter .jumpWindow.pointDetail .content {
+  max-height: 281px;
+  padding: 20px;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+}
+html body .filter .jumpWindow.pointDetail .content .scrollOuter {
+  width: 100%;
+  height: auto;
+  overflow: auto;
+}
+html body .filter .jumpWindow.pointDetail .content .scrollOuter table {
+  width: 100%;
+  padding-top: 40px;
+  margin: 0;
+  position: relative;
+}
+html body .filter .jumpWindow.pointDetail .content .scrollOuter table tr:first-child {
+  position: absolute;
+  top: 0;
+}
+html body .filter .jumpWindow.pointDetail .content .scrollOuter table tr th,
+html body .filter .jumpWindow.pointDetail .content .scrollOuter table tr td {
+  width: 50%;
+}
+html body .filter .jumpWindow.eventWindow {
+  width: 1000px;
+  height: auto;
+}
+html body .filter .jumpWindow.eventWindow .content {
+  width: 100%;
+  padding: 20px;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+}
+html body .filter .jumpWindow.eventWindow .content img {
+  width: 100%;
+  height: 240px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+html body .filter .jumpWindow.eventWindow .content .eventRule {
+  width: 100%;
+  height: 260px;
+  margin: 20px 0 0;
+}
+html body .filter .jumpWindow.eventWindow .content .eventRule .overflowBlock {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  -ms-scroll-chaining: none;
+      overscroll-behavior: none;
+}
+html body .filter .jumpWindow.eventWindow .content .eventRule .overflowBlock p {
+  margin-bottom: 10px;
+  line-height: 22px;
+}
+html body .filter .jumpWindow.eventWindow .content .eventRule .overflowBlock p:last-child {
+  margin-bottom: 0;
+}
+html body .filter .jumpWindow .title {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+html body .filter .jumpWindow .title i {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+}
+html body .filter .jumpWindow .content {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .filter .jumpWindow .content input {
+  width: 280px;
+  height: 42px;
+}
+html body .filter .jumpWindow .content table {
+  margin-top: 20px;
+}
+html body .filter .jumpWindow .btnBox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 30px;
+}
+html body .filter .jumpWindow .btnBox button {
+  display: block;
+  width: 280px;
+  height: 42px;
+  margin: 0 auto;
+}
+html body .filter .jumpWindow .btnBox .remind {
+  margin-top: 20px;
+}
+html body .mainWrap {
+  width: 100%;
+  height: auto;
+}
+html body .mainWrap .center {
+  width: 1400px;
+  height: auto;
+  padding: 20px 0 0;
+  margin: 0 auto;
+}
+html body .mainWrap .center .marqueeWrap {
+  width: 100%;
+  height: 50px;
+}
+html body .mainWrap .center .typeList {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px 20px;
+  padding: 60px 0;
+}
+html body .mainWrap .center .typeList .gameBlock {
+  width: 100%;
+  height: auto;
+  position: relative;
+  cursor: pointer;
+}
+html body .mainWrap .center .typeList .gameBlock p {
+  text-align: center;
+  margin-top: 15px;
+}
+html body .mainWrap .center .typeList .gameBlock .maintainBox {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  cursor: not-allowed;
+}
+html body .mainWrap .center .typeList .gameBlock .maintainBox p {
+  text-align: center;
+}
+html body .mainWrap .center .typeList .gameBlock .maintainBox p.title {
+  margin-bottom: 30px;
+}
+html body .registerWrap {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+html body .registerWrap .signUpBlock {
+  width: 865px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+html body .registerWrap .signUpBlock .decPic {
+  width: 50%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .registerWrap .signUpBlock .signBlock {
+  width: 50%;
+  height: auto;
+  padding: 40px;
+}
+html body .registerWrap .signUpBlock .signBlock .title {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+html body .registerWrap .signUpBlock .signBlock .title i {
+  margin-right: 20px;
+}
+html body .registerWrap .signUpBlock .signBlock form {
+  width: 100%;
+  height: auto;
+}
+html body .registerWrap .signUpBlock .signBlock form label {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+html body .registerWrap .signUpBlock .signBlock form label:nth-of-type(2) {
+  position: relative;
+}
+html body .registerWrap .signUpBlock .signBlock form label:nth-of-type(2) i {
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 35%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 10;
+}
+html body .registerWrap .signUpBlock .signBlock form label:nth-of-type(4) .outer {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 5px 0 0;
+}
+html body .registerWrap .signUpBlock .signBlock form label:nth-of-type(4) .outer input {
+  width: 100%;
+}
+html body .registerWrap .signUpBlock .signBlock form label:nth-of-type(4) .outer button {
+  width: 85px;
+  height: 30px;
+  white-space: nowrap;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .registerWrap .signUpBlock .signBlock form label input {
+  width: 100%;
+  height: 40px;
+  padding: 0 15px;
+}
+html body .registerWrap .signUpBlock .signBlock form label .remind {
+  margin: 5px 0;
+}
+html body .registerWrap .signUpBlock .signBlock .policy {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px auto;
+}
+html body .registerWrap .signUpBlock .signBlock .policy label {
+  width: 15px;
+  height: 15px;
+  margin: 0;
+}
+html body .registerWrap .signUpBlock .signBlock .policy label input {
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  margin: 0;
+  padding: 0;
+}
+html body .registerWrap .signUpBlock .signBlock .policy p {
+  margin-left: 10px;
+}
+html body .registerWrap .signUpBlock .signBlock button.check, html body .registerWrap .signUpBlock .signBlock button.enter {
+  width: 100%;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+}
+html body .registerWrap .signUpBlock .signBlock button.check {
+  margin-bottom: 10px;
+}
 html .bg {
   width: 100%;
   height: 100%;
@@ -1414,6 +2759,16 @@ html .bg {
   top: 0;
   left: 0;
   z-index: -999;
+}
+html .gamePage_BG {
+  width: 100%;
+  height: 100%;
+  min-height: 1554px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -999;
+  background: #7d0022;
 }
 html .filter {
   width: 100%;
