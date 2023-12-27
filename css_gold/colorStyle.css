@@ -178,7 +178,7 @@ header nav li.active a p {
 }
 
 header .downList {
-  background: #ffffff;
+  background: rgba(0, 0, 0, 0.4509803922);
   border-top: solid 1px #cccccc;
 }
 

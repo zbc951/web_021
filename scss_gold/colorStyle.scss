@@ -1,6 +1,7 @@
 $BG_color_1: #c4a167;
 $BG_color_2: #ffffff;
 $BG_color_3: #7d0022;
+$BG_color_4: #00000073;
 
 $Font_color_4: $BG_color_1;
 $Font_Title_1: #996c33;
@@ -177,7 +178,7 @@ header nav li.active a p {
     color: $Font_Title_1_Active;
 }
 header .downList {
-    background: $BG_color_2;
+    background: $BG_color_4;
     border-top: solid 1px $Border_color_1;
 }
 header .downList p {
