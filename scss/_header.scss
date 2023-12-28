@@ -280,51 +280,6 @@ header {
                         height: auto;
                         display: flex;
         
-                        .money {
-                            width: auto;
-                            height: auto;
-                            margin: 0 5px 0 20px;
-                            display: flex;
-                            position: relative;
-                            
-                            &:hover,&:active,&.active {
-                                i {
-                                    border-color: $borderColor_4 $borderColor_4 transparent transparent;
-                                }
-        
-                                select {
-                                    background: $buttonbg_7;
-                                    color: $borderColor_4;
-                                    border: 1px solid $borderColor_4;
-                                }
-                            }
-        
-                            select {
-                                width: 37px;
-                                height: 28px;
-                                border: 1px solid $borderColor_2;
-                                padding-left: 5px;
-                                font-size: 15px;
-                                font-weight: bold;
-                                border-radius: 2px;
-                                background: #ffffff;
-        
-                                option {
-                                    color: #000;
-                                }
-                            }
-                            i {
-                                width: 8px;
-                                height: 8px;
-                                border-width: 2px 2px 0 0;
-                                border-style: solid;
-                                border-color: #000 #000 transparent transparent;
-                                transform: rotate(135deg);
-                                position: absolute;
-                                top: 9px;
-                                right: 8px;
-                            }
-                        }
                         .total {
                             width: auto;
                             height: auto;
@@ -353,22 +308,23 @@ header {
                                 font-weight: bold;
                             }
 
-                            .fa-solid {
+                            .faSolid {
                                 width: 8px;
                                 height: 8px;
-                                border-width: 2px 2px 0 0;
+                                border-width: 5px 5px 0 5px;
                                 border-style: solid;
-                                border-color: #000 #000 transparent transparent;
-                                transform: rotate(135deg);
+                                border-color: #000000 transparent #000000 transparent;
+                                -webkit-transform: rotate(135deg);
+                                transform: rotate(0deg);
                                 position: absolute;
-                                top: 7px;
-                                right: 12px;
+                                top: 10px;
+                                right: 10px;
 
-                                &.fa-sort-down {
+                                &.faSortDown {
                                     margin-bottom: 5px;
                                 }
         
-                                &.fa-chevron-down {
+                                &.faChevronDown {
                                     margin: 2px 0 0 2px;
                                 }
                             }
@@ -399,6 +355,10 @@ header {
                                     padding: 15px;
                                     border: 1px solid #7d0022;
                                     border-bottom: 0;
+
+                                    &:last-child {
+                                        border-bottom: 1px solid #7d0022;
+                                    }
 
                                     p {
                                         font-weight: bold;
@@ -469,6 +429,7 @@ header {
                                 color: #000;
                             }
                         }
+
                         i {
                             width: 8px;
                             height: 8px;
@@ -558,7 +519,6 @@ header {
         top: 120px;
         left: 0;
         transition: 0.3s all;
-        z-index: 999;
         display: none;
 
         &.display {

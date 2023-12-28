@@ -153,6 +153,21 @@ header .navGroup .logo {
   background-size: contain;
 }
 
+.innerPage .marqueeGroup .decorationL {
+  background: url("../img/decorationL.png") no-repeat center;
+  background-size: contain;
+}
+
+.innerPage .marqueeGroup .decorationR {
+  background: url("../img/decorationR.png") no-repeat center;
+  background-size: contain;
+}
+
+.innerPage .marqueeGroup i {
+  background: url("../img/marqueeIc.png") no-repeat center;
+  background-size: contain;
+}
+
 .home .gameGroup ul li .picGroup {
   background: url("../img/aaBg.png") no-repeat center;
   background-size: contain;
@@ -529,49 +544,6 @@ html body header .top .afterLogin .center ul .wallet {
   display: -ms-flexbox;
   display: flex;
 }
-html body header .top .afterLogin .center ul .wallet .money {
-  width: auto;
-  height: auto;
-  margin: 0 5px 0 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-}
-html body header .top .afterLogin .center ul .wallet .money:hover i, html body header .top .afterLogin .center ul .wallet .money:active i, html body header .top .afterLogin .center ul .wallet .money.active i {
-  border-color: #f8deb8 #f8deb8 transparent transparent;
-}
-html body header .top .afterLogin .center ul .wallet .money:hover select, html body header .top .afterLogin .center ul .wallet .money:active select, html body header .top .afterLogin .center ul .wallet .money.active select {
-  background: -webkit-gradient(linear, left bottom, left top, from(#333333), to(#242424));
-  background: linear-gradient(to top, #333333 0%, #242424 100%);
-  color: #f8deb8;
-  border: 1px solid #f8deb8;
-}
-html body header .top .afterLogin .center ul .wallet .money select {
-  width: 37px;
-  height: 28px;
-  border: 1px solid #7d0022;
-  padding-left: 5px;
-  font-size: 15px;
-  font-weight: bold;
-  border-radius: 2px;
-  background: #ffffff;
-}
-html body header .top .afterLogin .center ul .wallet .money select option {
-  color: #000;
-}
-html body header .top .afterLogin .center ul .wallet .money i {
-  width: 8px;
-  height: 8px;
-  border-width: 2px 2px 0 0;
-  border-style: solid;
-  border-color: #000 #000 transparent transparent;
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
-  position: absolute;
-  top: 9px;
-  right: 8px;
-}
 html body header .top .afterLogin .center ul .wallet .total {
   width: auto;
   height: auto;
@@ -593,22 +565,22 @@ html body header .top .afterLogin .center ul .wallet .total .moneyTotal {
   text-align: center;
   font-weight: bold;
 }
-html body header .top .afterLogin .center ul .wallet .total .fa-solid {
+html body header .top .afterLogin .center ul .wallet .total .faSolid {
   width: 8px;
   height: 8px;
-  border-width: 2px 2px 0 0;
+  border-width: 5px 5px 0 5px;
   border-style: solid;
-  border-color: #000 #000 transparent transparent;
+  border-color: #000000 transparent #000000 transparent;
   -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
+  transform: rotate(0deg);
   position: absolute;
-  top: 7px;
-  right: 12px;
+  top: 10px;
+  right: 10px;
 }
-html body header .top .afterLogin .center ul .wallet .total .fa-solid.fa-sort-down {
+html body header .top .afterLogin .center ul .wallet .total .faSolid.faSortDown {
   margin-bottom: 5px;
 }
-html body header .top .afterLogin .center ul .wallet .total .fa-solid.fa-chevron-down {
+html body header .top .afterLogin .center ul .wallet .total .faSolid.faChevronDown {
   margin: 2px 0 0 2px;
 }
 html body header .top .afterLogin .center ul .wallet .total .transferInfo {
@@ -642,6 +614,9 @@ html body header .top .afterLogin .center ul .wallet .total .transferInfo .platf
   padding: 15px;
   border: 1px solid #7d0022;
   border-bottom: 0;
+}
+html body header .top .afterLogin .center ul .wallet .total .transferInfo .platform:last-child {
+  border-bottom: 1px solid #7d0022;
 }
 html body header .top .afterLogin .center ul .wallet .total .transferInfo .platform p {
   font-weight: bold;
@@ -809,7 +784,6 @@ html body header .downList {
   left: 0;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
-  z-index: 999;
   display: none;
 }
 html body header .downList.display {
@@ -2840,9 +2814,84 @@ html body .registerWrap .signUpBlock .signBlock button.check {
 html body .innerPage {
   padding: 120px 0 50px;
 }
-html body .innerPage .marqueeWrap {
+html body .innerPage .marqueeGroup {
   width: 1400px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0);
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+html body .innerPage .marqueeGroup::before {
+  content: "";
+  width: 1300px;
   height: 50px;
+  background: transparent;
+  border-width: 40px 25px 40px 25px;
+  border-style: solid;
+  border-color: #dddddd transparent transparent transparent;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+html body .innerPage .marqueeGroup .trapezoid {
+  position: absolute;
+  top: 0;
+  left: 38px;
+  height: 100%;
+  width: 50px;
+  background: #dddddd;
+  -webkit-transform: skewX(32deg);
+          transform: skewX(32deg);
+  z-index: 1;
+}
+html body .innerPage .marqueeGroup .decorationL {
+  width: 41px;
+  height: 45px;
+}
+html body .innerPage .marqueeGroup i {
+  width: 25px;
+  height: 20px;
+  position: absolute;
+  left: 50px;
+  z-index: 2;
+}
+html body .innerPage .marqueeGroup .marquee {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+html body .innerPage .marqueeGroup .marquee p {
+  display: inline-block;
+  font-size: 17px;
+  font-weight: bold;
+  color: #7d0022;
+  padding-left: 100%;
+  white-space: nowrap;
+  -webkit-animation: marquee 10s linear infinite;
+          animation: marquee 10s linear infinite;
+}
+html body .innerPage .marqueeGroup .decorationR {
+  width: 41px;
+  height: 45px;
+}
+@keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
 }
 html body .innerPage .center {
   width: 1400px;

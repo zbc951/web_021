@@ -27,7 +27,7 @@
                         <li class="wallet">
                             <div class="total">
                                 <p class="moneyTotal">9999</p>
-                                <i class="fa-solid fa-sort-down"></i>
+                                <i class="faSolid faSortDown"></i>
                                 <!-- 平台點數 -->
                                 <div class="transferInfo">
                                     <div class="platform">
@@ -113,7 +113,7 @@
                             <div class="buttonGroup">
                                 <button onclick="window.location.href='../html/deposit.html'">存款</button>
                                 <button onclick="window.location.href='../html/transfer.html'">轉帳</button>
-                                <button onclick="window.location.href='../html/withdraw.html'">提款</button>
+                                <button class=" active" onclick="window.location.href='../html/withdraw.html'">提款</button>
                                 <button onclick="window.location.href='../html/member.html'">會員中心</button>
                                 <button onclick="window.location.href='../html/mail.html'">站內信</button>
                                 <a href="../index.html"><button>登出</button></a>
@@ -138,7 +138,7 @@
                 <li class="" onclick="window.location.href='../index.html'"><p>首頁</p></li>
                 <li class="sport" onclick="window.location.href='../html/sportPage.html'"><p>體育賽事</p></li>
                 <li class="live" onclick="window.location.href='../html/livePage.html'"><p>真人娛樂</p></li>
-                <li class="slot active" onclick="window.location.href='../html/slotPage.html'"><p>老虎機</p></li>
+                <li class="slot" onclick="window.location.href='../html/slotPage.html'"><p>老虎機</p></li>
                 <li class="ticket" onclick="window.location.href='../html/lotteryPage.html'"><p>彩票</p></li>
                 <li class="fish" onclick="window.location.href='../html/fishPage.html'"><p>捕魚機</p></li>
                 <li class="board" onclick="window.location.href='../html/boardPage.html'"><p>棋牌遊戲</p></li>
@@ -236,14 +236,14 @@
     </header>
     <main class="innerPage">
         <!-- 跑馬燈 -->
-        <div class="marqueeWrap">
-            <div class="title">
-                <!-- <i class="marquee_ic"> -->
-                <p>最新資訊</p>
-            </div>
+        <div class="marqueeGroup">
+            <div class="trapezoid"></div>
+            <div class="decorationL"></div>
+            <i></i>
             <div class="marquee">
-                <p>跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈</p>
+                <p>我是跑馬燈我是跑馬燈我是跑馬燈我是跑馬燈</p>
             </div>
+            <div class="decorationR"></div>
         </div>
         <dic class="center">
             <!-- 左欄 -->
@@ -553,7 +553,7 @@
         <div class="footerGroup">
             <div class="navGroup">
                 <ul>
-                    <li class="active"><p>最新公告</p></li>
+                    <li onclick="window.location.href='../index.html'"><p>最新公告</p></li>
                     <li onclick="window.location.href='../html/event.html'"><p>優惠</p></li>
                     <li onclick="window.location.href='../html/vip.html'"><p>VIP會員</p></li>
                     <li onclick="window.location.href='../html/help.html'"><p>幫助中心</p></li>
