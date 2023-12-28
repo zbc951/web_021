@@ -113,9 +113,9 @@ $(function(){
 
 //header 平台點數
 $(function(){
-    $("header .top ul.loginBox li.total").click(function(){
+    $("header .top .afterLogin .center ul .wallet .total").click(function(){
         $(this)
-        .children("ul.transferInfo")
+        .children(".transferInfo")
         .toggleClass("display");
     })
 })

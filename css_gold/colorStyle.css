@@ -2,12 +2,6 @@ header .top {
   background: #c4a167;
 }
 
-header .top li {
-  border-right: solid 1px #7a746a;
-  -webkit-box-shadow: 1px 1px 0.5px #ffffff;
-          box-shadow: 1px 1px 0.5px #ffffff;
-}
-
 header .UnLoginBox label {
   background: #ffffff;
   border: none;

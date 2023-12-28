@@ -36,10 +36,10 @@ $BankCard_BG: linear-gradient(120deg, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
 header .top {
     background: $BG_color_1;
 }
-header .top li { //個別調整
-    border-right: solid 1px #7a746a;
-    box-shadow: 1px 1px 0.5px #ffffff;
-}
+// header .top li { //個別調整
+//     border-right: solid 1px #7a746a;
+//     box-shadow: 1px 1px 0.5px #ffffff;
+// }
 header .UnLoginBox label { //個別調整
     background: #ffffff;
     border: none;

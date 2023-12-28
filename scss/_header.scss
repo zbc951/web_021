@@ -325,6 +325,92 @@ header {
                                 right: 8px;
                             }
                         }
+                        .total {
+                            width: auto;
+                            height: auto;
+                            display: flex;
+                            align-items: center;
+                            position: relative;
+                            padding: 0 20px;
+                            border: 1px solid #7d0022;
+                            background: #ffffff;
+                            margin-right:10px;
+                            cursor: pointer;
+
+                            // &:hover,&:active,&.active {
+                            //     background: $buttonbg_7;
+                            //     color: $borderColor_4;
+                            //     border: 1px solid $borderColor_4;
+
+                            //     i {
+                            //         border-color: $borderColor_4 $borderColor_4 transparent transparent;
+                            //     }
+                            // }
+
+                            .moneyTotal {
+                                margin-right: 10px;
+                                text-align: center;
+                                font-weight: bold;
+                            }
+
+                            .fa-solid {
+                                width: 8px;
+                                height: 8px;
+                                border-width: 2px 2px 0 0;
+                                border-style: solid;
+                                border-color: #000 #000 transparent transparent;
+                                transform: rotate(135deg);
+                                position: absolute;
+                                top: 7px;
+                                right: 12px;
+
+                                &.fa-sort-down {
+                                    margin-bottom: 5px;
+                                }
+        
+                                &.fa-chevron-down {
+                                    margin: 2px 0 0 2px;
+                                }
+                            }
+        
+                            //平台點數
+                            .transferInfo {
+                                display: none;
+                                width: 290px;
+                                height: auto;
+                                position: absolute;
+                                top: 33px;
+                                left: 0;
+                                z-index: 25;
+        
+                                &.display {
+                                    display: block;
+                                    background: #ffe9c8;
+                                }
+        
+                                .platform {
+                                    width: 100%;
+                                    height: auto;
+                                    border-right: none;
+                                    box-shadow: none;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    padding: 15px;
+                                    border: 1px solid #7d0022;
+                                    border-bottom: 0;
+
+                                    p {
+                                        font-weight: bold;
+                                        color: #000000;
+
+                                        span {
+                                            color: #C70036;
+                                        }
+                                    }
+                                }
+                            }
+                        }
                         .buttonGroup {
                             width: 100%;
                             height: auto;
