@@ -1528,6 +1528,10 @@ main.innerPage .center .midSide.deposit .midBottom .deposit_finished .deposit_St
   letter-spacing: unset;
 }
 
+.registerWrap {
+  background: #7d0022;
+}
+
 .registerWrap .signUpBlock {
   background: #ffffff;
   -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);

@@ -1360,6 +1360,9 @@ main.innerPage .center .midSide.deposit .midBottom .deposit_finished .deposit_St
 }
 
 //register
+.registerWrap {
+    background: $BG_color_3; 
+}
 .registerWrap .signUpBlock {
     background: $BG_color_2; 
     box-shadow: 0 5px 10px -5px #00000066;

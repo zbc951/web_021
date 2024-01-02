@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link class="colorSystem" rel="stylesheet" href="./css_gold/colorStyle.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/8858aac5ee.js" crossorigin="anonymous"></script>
     <script src="./js/javascript.js"></script>
     <title>Document</title>
 </head>
-<body>
+<body class="unlogin">
     <header>
         <div class="top">
             <!-- 登入前 -->
@@ -25,12 +27,12 @@
                     </label>
                     <div class="buttonGroup">
                         <a href="./html/innerpage.html"><div class="loginBtn"><p>登入</p></div></a>
-                        <a href="./html/innerpage.html"><div class="Register"><p>註冊</p></div></a>
+                        <a href="./html/register.html"><div class="Register"><p>註冊</p></div></a>
                     </div>
                 </form>
                 <div class="forget">
                     <i>?</i>
-                    <a href="">忘記密碼</a>
+                    <a href="javascript:;">忘記密碼</a>
                 </div>
                 <div class="language">
                     <select name="" id="">
@@ -46,15 +48,15 @@
         <div class="navGroup">
             <div class="logo"></div>
             <ul>
-                <li class="active" onclick="window.location.href='index.html'"><p>首頁</p></li>
-                <li class="sport" onclick="window.location.href='./html/sportPage.html'"><p>體育賽事</p></li>
-                <li class="live" onclick="window.location.href='./html/livePage.html'"><p>真人娛樂</p></li>
-                <li class="slot" onclick="window.location.href='./html/slotPage.html'"><p>老虎機</p></li>
-                <li class="ticket" onclick="window.location.href='./html/lotteryPage.html'"><p>彩票</p></li>
-                <li class="fish" onclick="window.location.href='./html/fishPage.html'"><p>捕魚機</p></li>
-                <li class="board" onclick="window.location.href='./html/boardPage.html'"><p>棋牌遊戲</p></li>
-                <li onclick="window.location.href='./html/event.html'"><p>優惠</p></li>
-                <li onclick="window.location.href='./html/vip.html'"><p>VIP會員</p></li>
+                <li class="active"><p>首頁</p></li>
+                <li class="sport"><p>體育賽事</p></li>
+                <li class="live"><p>真人娛樂</p></li>
+                <li class="slot"><p>老虎機</p></li>
+                <li class="ticket"><p>彩票</p></li>
+                <li class="fish"><p>捕魚機</p></li>
+                <li class="board"><p>棋牌遊戲</p></li>
+                <li><p>優惠</p></li>
+                <li><p>VIP會員</p></li>
             </ul>
         </div>
         <!-- 下拉選單 -->
@@ -249,11 +251,11 @@
         <div class="footerGroup">
             <div class="navGroup">
                 <ul>
-                    <li onclick="window.location.href='../index.html'"><p>最新公告</p></li>
-                    <li onclick="window.location.href='../html/event.html'"><p>優惠</p></li>
-                    <li onclick="window.location.href='../html/vip.html'"><p>VIP會員</p></li>
-                    <li onclick="window.location.href='../html/help.html'"><p>幫助中心</p></li>
-                    <li onclick="window.location.href='../html/help.html'"><p>關於我們</p></li> 
+                    <li><p>最新公告</p></li>
+                    <li><p>優惠</p></li>
+                    <li><p>VIP會員</p></li>
+                    <li><p>幫助中心</p></li>
+                    <li><p>關於我們</p></li> 
                 </ul>
                 <span>2021 AU8GAMING.COM</span>
             </div>
@@ -268,22 +270,35 @@
         </div>
     </footer>
     <div class="bg"></div>
+    <!-- 彈窗 -->
     <div class="filter">
-        <div class="popUp">
+        <!-- 忘記密碼 -->
+        <div class="jumpWindow fgPW">
             <div class="title">
-                <p>最新消息</p>
-                <div class="close">╳</div>
+                <p>忘記密碼</p>
+                <!-- <i class="close_ic"></i> -->
+                <i class="fa-solid fa-xmark closeWindow"></i>
             </div>
-            <div class="contentGroup">
-                <ul class="content">
-                    <li><p>熱門</p></li>
-                    <li class="active"><p>一般</p></li>
-                    <li><p>存款</p></li>
-                </ul>
-                <ul class="information">
-                    <li><p>格式測試@@@@</p></li>
-                    <li><p>格式測試@@</p></li>
-                </ul>
+            <div class="content">
+                <input class="inputStyle_1" type="text" placeholder="請輸入您的手機號碼">
+            </div>
+            <div class="btnBox">
+                <button class="closeWindow btnStyle_1">重置密碼</button>
+                <p class="remind">我們將發送新的密碼到您的手機，請查收簡訊</p>
+            </div>
+        </div>
+        <!-- 請先登入 -->
+        <div class="jumpWindow plsLogin">
+            <div class="title">
+                <p>提示</p>
+                <!-- <i class="close_ic"></i> -->
+                <i class="fa-solid fa-xmark closeWindow"></i>
+            </div>
+            <div class="content">
+                <p>請先登入</p>
+            </div>
+            <div class="btnBox">
+                <button class="closeWindow btnStyle_1">確認</button>
             </div>
         </div>
     </div>

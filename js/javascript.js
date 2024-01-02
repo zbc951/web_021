@@ -679,7 +679,7 @@ $(function(){
 $(function(){
 
     //忘記密碼
-    $(".forgetBtn").click(function(){
+    $(".forget").click(function(){
         $(".jumpWindow")
         .removeClass("display");
 
@@ -688,7 +688,7 @@ $(function(){
     })
     
     //請先登入
-    $("header .bottom, header .downList, .home, footer").click(function(){
+    $("header .navGroup, header .downList, .home, footer").click(function(){
         if($(this).closest("body").hasClass("unlogin"))
         {
             $(".filter, .jumpWindow.plsLogin")
